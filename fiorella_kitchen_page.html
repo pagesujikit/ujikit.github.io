@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1.0"
+    />
+    <title>Ujikit Portofolio</title>
+    <link rel="icon" href="img/logo backup.png" />
+
+    <link rel="stylesheet" href="frontend/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="frontend/materialize/css/materialize.css" />
+    <link
+      rel="stylesheet"
+      href="frontend/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/footer-distributed-with-address-and-phones.css"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/chatbot/main.css" />
+    <style>
+      body {
+        background-image: url('frontend/img/fiorella-kitchen/background.jpg'); /* Path to your image */
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="margin-top: 25px">
+      <!-- <ol class="breadcrumb">
+        <li><a href="index.html" style="color: #b76a40">Home</a></li>
+        <li class="active"><a style="color: grey">Fiorella Kitchen</a></li>
+      </ol> -->
+
+      <div class="row" style="margin-top: 60px">
+        <div class="col-lg-12 col-xs-12">
+          <div class="center-align">
+            <div>
+              <img
+                src="frontend/img/fiorella-kitchen/logo.png"
+                style="width: 100px"
+              />
+            </div>
+            <div style="margin-top: 45px">
+              <span
+                id="title"
+                class="label label-danger"
+                style="font-size: 16px; background: #b76a40"
+              >
+                Fiorella Kitchen's Official Web
+              </span>
+            </div>
+          </div>
+          <div id="spillData" style="margin-top: 40px" />
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <footer
+      class="col-xs-12 col-lg-10"
+      style="
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        margin-top: 60px;
+        z-index: 999999999999;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-6">
+            <div class="footer-content text-right" style="margin-top: -15px">
+              <p>
+                Made with
+                <span class="fa fa-heart" style="color: red"></span> by Ujikit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      -->
+
+    <script src="frontend/jquery-3.3.1.min.js"></script>
+    <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
+    <script src="frontend/materialize/js/materialize.min.js"></script>
+    <script src="frontend/canvasjs-1.9.10/canvasjs.min.js"></script>
+    <script src="frontend/master.js"></script>
+
+    <script>
+      const spillData = [
+        {
+          title: 'Download Pricelist / Daftar harga',
+          link: 'frontend/img/fiorella-kitchen/price-list.png',
+          icon: 'download'
+        },
+        {
+          title: 'Whatsapp',
+          link: 'https://api.whatsapp.com/send/?phone=6285926262714&text=Halo+Fiorella+Kitchen&type=phone_number&app_absent=0',
+          icon: 'whatsapp'
+        },
+        {
+          title: 'Instagram',
+          link: 'https://instagram.com/fiorella_kitchen',
+          icon: 'instagram'
+        }
+      ];
+
+      for (let index = 0; index < spillData.length; index++) {
+        $('#spillData').append(`
+            <a id="spill" target="_blank" href="${spillData[index].link}" class="" style="display: flex; justify-content: space-between; align-items: center; height: 60px; color: #b76a40; background-color: #ffc177; margin-top: 20px; padding-left: 20px; padding-right: 20px; border-radius: 15px; font-size: 19px"
+              >${spillData[index].title}
+              <span class="new badge" style="display: flex; justify-content: center; align-items: center; width: 25px; height: 30px; background-color: #b76a40">
+                <span class="fa fa-${spillData[index].icon}" style="font-size: 17px">
+                </span>
+              </span>
+            </a>
+        `);
+      }
+    </script>
+  </body>
+</html>
