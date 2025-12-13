@@ -23,7 +23,13 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/chatbot/main.css" />
   </head>
-  <body>
+  <body
+    style="
+      background-image: url(/img/micro_web/link_spill_fiorella_almahyra/main-background.jpg);
+      background-size: cover;
+      background-position: center;
+    "
+  >
     <div class="container" style="margin-top: 25px">
       <ol class="breadcrumb">
         <li><a href="index.html">Home</a></li>
@@ -34,7 +40,10 @@
         <div class="col-lg-12 col-xs-12">
           <div class="center-align">
             <div>
-              <img src="frontend/img/fio.png" style="width: 115px" />
+              <img
+                src="/img/micro_web/link_spill_fiorella_almahyra/fio.png"
+                style="width: 115px"
+              />
             </div>
             <div style="margin-top: 30px">
               <span
@@ -46,39 +55,14 @@
               </span>
             </div>
           </div>
-          <div id="spillData" class="collection" style="margin-top: 40px; margin-bottom: 50px" />
+          <div
+            id="spillData"
+            class="collection"
+            style="margin-top: 40px; margin-bottom: 50px"
+          />
         </div>
       </div>
     </div>
-
-
-
-      <!--
-    <footer
-      class="col-xs-12 col-lg-10"
-      style="
-        position: absolute;
-        bottom: 0;
-        height: 50px;
-        margin-top: 60px;
-        z-index: 999999999999;
-      "
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6"></div>
-          <div class="col-xs-6">
-            <div class="footer-content text-right" style="margin-top: -15px">
-              <p>
-                Made with
-                <span class="fa fa-heart" style="color: red"></span> by Ujikit
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-      -->
 
     <script src="frontend/jquery-3.3.1.min.js"></script>
     <script src="frontend/bootstrap/js/bootstrap.min.js"></script>
@@ -137,7 +121,6 @@
           link: 'https://s.shopee.co.id/50Ru2Y9WIP'
         }
       ];
-          
 
       for (let index = 0; index < spillData.length; index++) {
         $('#spillData').append(`<a id="spill" target="_blank" href="${
