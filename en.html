@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="iYAyJVM6wjDKcg4kjy3sTsONL0-74Z-4yDTBjpGVK1o"
+    />
+    <title>Ujikit Portofolio</title>
+    <link rel="icon" href="img/logo backup.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui'] },
+            colors: { ink: '#0d0d0d', paper: '#f7f7f7' }
+          }
+        }
+      };
+    </script>
+    <style>
+      .grid-bg {
+        background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        background-size: 28px 28px;
+      }
+      .typing-cursor {
+        display: inline-block;
+        width: 1px;
+        height: 1em;
+        margin-left: 2px;
+        vertical-align: -0.15em;
+        background: currentColor;
+        animation: blink 1s steps(1) infinite;
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { scrollbar-width: none; }
+      .fade-edges {
+        -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+        mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+      }
+    </style>
+  </head>
+  <body class="bg-paper font-sans text-ink antialiased">
+    <!-- Navbar -->
+    <header class="absolute inset-x-0 top-0 z-30">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 text-sm">
+        <a href="#home" class="font-medium">ujik.</a>
+        <ul class="flex items-center gap-5 sm:gap-8">
+          <li><a href="#home" class="font-medium">Home</a></li>
+          <li><a href="#projects" class="hidden text-neutral-500 transition hover:text-ink sm:inline">Projects</a></li>
+          <li><a href="#experience" class="hidden text-neutral-500 transition hover:text-ink sm:inline">Companies</a></li>
+          <li><a href="#contact" class="text-neutral-500 transition hover:text-ink">Contact</a></li>
+          <li><a href="#about" class="text-neutral-500 transition hover:text-ink">About</a></li>
+          <li class="flex items-center gap-1 text-xs" aria-label="Language">
+            <a href="index.html" class="text-neutral-400 transition hover:text-ink">ID</a>
+            <span class="text-neutral-300">/</span>
+            <span class="font-medium" aria-current="true">EN</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="grid-bg relative overflow-hidden bg-neutral-100 pt-28">
+      <div class="mx-auto grid max-w-6xl items-end gap-8 px-6 md:grid-cols-2">
+        <div class="pb-14 md:pb-24">
+          <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-ink/70 bg-white px-3 py-1 text-xs">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            Fauzi Zaki <span class="text-neutral-500">/ <span id="typing" data-text="Frontend Developer">Frontend Developer</span><span class="typing-cursor"></span></span>
+          </span>
+          <h1 class="text-4xl font-light leading-tight text-neutral-500 sm:text-5xl md:text-6xl">
+            Wanna build a <span class="font-normal text-ink">Website</span>
+            or <span class="font-normal text-ink">Android / iOS?</span>
+          </h1>
+          <p class="mt-6 max-w-sm text-neutral-500">
+            Just call me <strong class="font-medium text-ink">Ujik</strong>. 
+            I turn website ideas into working &mdash; solutions &amp; development is my passion.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="border border-ink px-5 py-2 text-sm transition hover:bg-ink hover:text-white">Let's Talk</a>
+            <a href="https://wa.me/6285926262714?text=Hello%20ujik%2C%20saya%20ingin%20bertanya%20mengenai%20pembuatan%20aplikasi" target="_blank" rel="noopener noreferrer" class="border border-[#25D366] px-5 py-2 text-sm text-[#128C7E] transition hover:bg-[#25D366] hover:text-white">WhatsApp</a>
+            <a href="#projects" class="bg-ink px-5 py-2 text-sm text-white transition hover:bg-neutral-700">View My Work</a>
+          </div>
+          <dl class="mt-12 grid max-w-md grid-cols-3 gap-4 text-sm">
+            <div class="border-l border-ink pl-3">
+              <dt class="text-3xl font-light">5+</dt>
+              <dd class="mt-1 text-xs text-neutral-500">Achievements Across tech companies</dd>
+            </div>
+            <div class="border-l border-ink pl-3">
+              <dt class="text-3xl font-light">6+</dt>
+              <dd class="mt-1 text-xs text-neutral-500">Years Experience<br />Building software</dd>
+            </div>
+            <div class="border-l border-ink pl-3">
+              <dt id="stat-projects" class="text-3xl font-light">&ndash;</dt>
+              <dd class="mt-1 text-xs text-neutral-500">Projects Completed<br />Web &amp; mobile apps</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="flex justify-center">
+          <img src="img/interface-app-photo.webp" loading="lazy" decoding="async" alt="Ujik" class="h-80 w-auto object-contain md:h-[40rem]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-ink py-20 text-white">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h2 class="text-4xl font-light leading-tight sm:text-5xl">
+              Engineering with<br />Clarity and Intention.
+            </h2>
+            <p class="mt-8 max-w-md text-sm leading-relaxed text-neutral-300">
+              I'm a developer who loves technology and the automotive world. I focus on
+              building clear, dependable software &mdash; not just how it looks, but how it
+              works and how it solves real problems. I care about the details: I turn designs
+              into pixel-perfect interfaces, matching spacing, type and color down to the pixel.
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-md">
+            <div id="app-lottie" role="img" aria-label="Selected app preview" class="mx-auto h-80 w-full p-4"></div>
+          </div>
+        </div>
+        <ul class="mt-16 flex flex-wrap justify-between gap-x-6 gap-y-4 text-xs">
+          <li class="border-b border-white/70 pb-1">Web Programmer</li>
+          <li class="border-b border-white/70 pb-1">Mobile Apps Programmer</li>
+          <li class="border-b border-white/70 pb-1">React</li>
+          <li class="border-b border-white/70 pb-1">Nest JS</li>
+          <li class="border-b border-white/70 pb-1">React JS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="what-i-do" class="mx-auto max-w-6xl px-6 pt-20">
+      <h2 class="text-3xl font-light text-ink sm:text-4xl">What I Do</h2>
+      <p class="mt-3 max-w-xl text-neutral-500">
+        Building scalable web apps, high-performance mobile experiences, and reliable server infrastructure.
+      </p>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="flex flex-col rounded-md bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-medium">Mobile App Development</h3>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">
+            Crafting fluid, cross-platform mobile applications with emphasis on native performance, clean architecture, and intuitive user interfaces.
+          </p>
+          <p class="mt-auto pt-6 text-xs uppercase tracking-wide text-neutral-400">Core Stack</p>
+          <ul class="mt-2 flex flex-wrap gap-2 text-xs"><li class="rounded-full border border-neutral-300 px-3 py-1">React Native</li><li class="rounded-full border border-neutral-300 px-3 py-1">TypeScript</li><li class="rounded-full border border-neutral-300 px-3 py-1">Expo</li><li class="rounded-full border border-neutral-300 px-3 py-1">iOS / Android</li><li class="rounded-full border border-neutral-300 px-3 py-1">Android Studio</li><li class="rounded-full border border-neutral-300 px-3 py-1">XCode</li></ul>
+        </article>
+        <article class="flex flex-col rounded-md bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-medium">Web Development</h3>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">
+            Developing fast, responsive, and SEO-optimized web applications with dynamic user interfaces and scalable API integrations.
+          </p>
+          <p class="mt-auto pt-6 text-xs uppercase tracking-wide text-neutral-400">Core Stack</p>
+          <ul class="mt-2 flex flex-wrap gap-2 text-xs"><li class="rounded-full border border-neutral-300 px-3 py-1">Next.js</li><li class="rounded-full border border-neutral-300 px-3 py-1">React.js</li><li class="rounded-full border border-neutral-300 px-3 py-1">TypeScript</li><li class="rounded-full border border-neutral-300 px-3 py-1">Tailwind CSS</li><li class="rounded-full border border-neutral-300 px-3 py-1">TanStack Query</li></ul>
+        </article>
+        <article class="flex flex-col rounded-md bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-medium">Backend &amp; DevOps</h3>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">
+            Designing RESTful APIs, database structures, and managing containerized server setups to ensure high availability and uptime.
+          </p>
+          <p class="mt-auto pt-6 text-xs uppercase tracking-wide text-neutral-400">Core Stack</p>
+          <ul class="mt-2 flex flex-wrap gap-2 text-xs"><li class="rounded-full border border-neutral-300 px-3 py-1">Node.js</li><li class="rounded-full border border-neutral-300 px-3 py-1">NestJS</li><li class="rounded-full border border-neutral-300 px-3 py-1">Prisma / MySQL</li><li class="rounded-full border border-neutral-300 px-3 py-1">Docker</li><li class="rounded-full border border-neutral-300 px-3 py-1">Linux</li><li class="rounded-full border border-neutral-300 px-3 py-1">Redis</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Selected Projects -->
+    <section id="projects" class="mx-auto max-w-6xl px-6 py-20">
+      <h2 class="text-3xl font-light text-neutral-500 sm:text-4xl">
+        Projects I've <span class="text-ink">built and shipped successfully.</span>
+      </h2>
+      <div id="project-filters" class="mt-10 flex flex-wrap gap-2 text-sm" role="group" aria-label="Filter projects"></div>
+      <div id="project-list" class="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-10">
+      <h2 class="mx-auto max-w-3xl px-6 text-center text-3xl font-light text-neutral-500 sm:text-4xl">
+        Companies I've <span class="text-ink">joined</span> and the <span class="text-ink">products we shipped</span>
+      </h2>
+      <div id="experience-list" tabindex="0" aria-label="Work experience, scrollable" class="fade-edges no-scrollbar mx-auto mt-12 max-w-6xl cursor-grab select-none overflow-x-auto pb-4 active:cursor-grabbing"></div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="mx-auto max-w-6xl px-6 py-20">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-4xl font-light leading-tight text-neutral-500 sm:text-5xl">
+            Let's build something <span class="text-ink">meaningful together.</span>
+          </h2>
+          <p class="mt-6 max-w-sm text-neutral-500">
+            I'm open to collaborations, freelance work, or opportunities where thoughtful
+            engineering can make a real impact.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="mailto:fauzizaki15@gmail.com" class="border border-ink px-5 py-2 text-sm transition hover:bg-ink hover:text-white">Let's Talk</a>
+            <a href="https://wa.me/6285926262714?text=Hello%20ujik%2C%20saya%20ingin%20bertanya%20mengenai%20pembuatan%20aplikasi" target="_blank" rel="noopener noreferrer" class="border border-[#25D366] px-5 py-2 text-sm text-[#128C7E] transition hover:bg-[#25D366] hover:text-white">WhatsApp</a>
+            <a href="frontend/files/cv_fauzi_zaki.pdf" class="bg-ink px-5 py-2 text-sm text-white transition hover:bg-neutral-700">Download CV</a>
+          </div>
+        </div>
+        <div class="flex aspect-[4/3] items-end justify-center overflow-hidden rounded-sm">
+          <img src="img/interface-app-photo.webp" loading="lazy" decoding="async" alt="Ujik" class="h-full w-auto object-contain object-bottom" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-ink to-neutral-800 text-white">
+      <div class="mx-auto flex max-w-6xl flex-col justify-between gap-10 px-6 py-14 md:flex-row">
+        <div>
+          <p class="text-xl">ujik.</p>
+          <p class="mt-2 text-sm text-neutral-300">Engineering with clarity and intention.</p>
+          <div class="mt-6 flex flex-wrap gap-3 text-sm">
+            <a href="https://github.com/ujikit" target="_blank" rel="noopener" class="border border-white/60 px-4 py-1.5 transition hover:bg-white hover:text-ink">github</a>
+            <a href="https://www.instagram.com/ujikit/" target="_blank" rel="noopener" class="border border-white/60 px-4 py-1.5 transition hover:bg-white hover:text-ink">instagram</a>
+            <a href="https://twitter.com/uzikzaki" target="_blank" rel="noopener" class="border border-white/60 px-4 py-1.5 transition hover:bg-white hover:text-ink">twitter</a>
+            <a href="https://www.facebook.com/uzixbomberman" target="_blank" rel="noopener" class="border border-white/60 px-4 py-1.5 transition hover:bg-white hover:text-ink">facebook</a>
+          </div>
+        </div>
+        <div class="md:text-right">
+          <p class="text-sm text-neutral-300">Open for collaboration</p>
+          <a href="mailto:fauzizaki15@gmail.com" class="mt-3 inline-block rounded-full bg-white px-5 py-2 text-sm text-ink">fauzizaki15@gmail.com</a>
+        </div>
+      </div>
+      <p class="pb-6 text-center text-xs text-neutral-400">&copy; 2026 Ujikit. All rights reserved.</p>
+    </footer>
+    <script>
+      // Logo box size in px. Override per company with `logoSize: { height, maxWidth }`.
+      const LOGO_SIZE = { height: 56, maxWidth: 112 };
+
+      const experiences = [
+        { period: 'September 2026', role: 'Frontend Developer', company: 'Konnco Studio', location: 'Bantul, Yogyakarta · Onsite', logo: 'img/companies/konnco-studio.webp', logoSize: { height: 56, maxWidth: 112 } },
+        { period: 'Jun 2025 – Jul 2026', role: 'Fullstack Developer', company: 'Bomber Co., Ltd', location: 'Taiwan · Remote', logo: 'img/companies/bomber.webp', logoSize: { height: 45, maxWidth: 112 } },
+        { period: 'Feb 2021 – Mar 2025', role: 'Frontend Developer (Middle)', company: 'Telkom Indonesia', location: 'South Jakarta · Onsite', logo: 'img/companies/telkom-indonesia.webp', logoSize: { height: 50, maxWidth: 112 } },
+        { period: 'Jul 2019 – Dec 2020', role: 'Mobile Developer (Lead)', company: 'PT. Royal DParagon Land', location: 'Sleman, Yogyakarta · Onsite', logo: 'img/companies/royal-dparagon.webp', logoSize: { height: 56, maxWidth: 112 } },
+        { period: 'Jul 2019 – Dec 2020', role: 'Mobile Developer', company: 'PT. Djuragan Kreatif Indonesia', location: 'Yogyakarta · Remote (Freelance)', logo: 'img/companies/djuragan-kreatif.webp', logoSize: { height: 56, maxWidth: 112 } },
+      ];
+
+      // Newest first. categories: 'web' | 'mobile' | 'pos' | 'other'
+      const projects = [
+        { name: "Golfer Web", type: 'Golf Course Booking Website', categories: ['web'], cover: 'from-emerald-400 via-lime-200 to-green-600', image: 'img/golfer-image.webp', url: 'https://topgolfer.app/zh' },
+        { name: "Golfer Mobile", type: 'Golf Booking & Tee Time App', categories: ['mobile'], cover: 'from-green-500 via-emerald-200 to-lime-300', image: 'img/golfer-image.webp', url: 'https://play.google.com/store/apps/details?id=com.bomber.golferapp&hl=id' },
+        { name: "Golfer POS", type: 'Cashier & Course Management App', categories: ['pos'], cover: 'from-neutral-800 via-green-600 to-emerald-300', image: 'img/golfer-image2.webp', url: 'https://play.google.com/store/apps/details?id=com.bomber.golferpos&hl=id' },
+        // { name: "JUBER One Click All Payment", type: 'Super App & Payments', categories: ['mobile'], cover: 'from-red-400 via-orange-200 to-rose-300' },
+        { name: "Tomps Building", type: 'Building Operation Management', categories: ['mobile'], cover: 'from-amber-300 via-orange-300 to-neutral-700', image: 'img/tomps-building-image.webp', url: 'https://play.google.com/store/apps/details?id=com.hunianaja&hl=id' },
+        { name: "Clevis Partner", type: 'On-demand Services App', categories: ['mobile'], cover: 'from-sky-300 via-cyan-600 to-teal-800', image: 'img/clevis.webp', url: 'https://play.google.com/store/apps/details?id=com.clevis.app&hl=id' },
+        // { name: "BRIBox", type: 'Hardware Reporting Internal App', categories: ['mobile'], cover: 'from-orange-400 via-blue-500 to-blue-900' },
+        // { name: "Incidema Perhutani", type: 'Disaster Reporting with ArcGIS', categories: ['mobile'], cover: 'from-lime-300 via-green-500 to-emerald-800' },
+        { name: "Djuragan Voucher (GORDIG.ID)", type: 'Online Voucher Redemption', categories: ['mobile'], cover: 'from-sky-200 via-blue-400 to-indigo-600', image: 'img/djuragan-voucher.webp', url: 'https://play.google.com/store/apps/details?id=com.djuraganvoucher.member&hl=id' },
+        { name: "Djuragan Kamar (DJURKAM)", type: 'Room Finder & Reservation', categories: ['mobile'], cover: 'from-yellow-300 via-amber-500 to-neutral-800', image: 'img/djurkam.webp', url: 'https://play.google.com/store/apps/details?id=com.djuragankamar.ids&hl=id' },
+        { name: "D'Paragon", type: 'Exclusive Room Rentals', categories: ['mobile'], cover: 'from-neutral-800 via-sky-400 to-cyan-300', image: 'img/dparagon.webp', url: 'https://play.google.com/store/apps/details?id=com.dparagon.app&hl=id' }
+      ];
+
+      const initialsOf = (e) =>
+        e.initials ||
+        e.company.replace(/\(.*?\)/g, '').split(/[\s.,]+/).filter((w) => /^[A-Za-z]/.test(w) && !/^(PT|Co|Ltd)$/i.test(w)).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
+
+      const logoBoxStyle = (e) => {
+        const { height, maxWidth } = { ...LOGO_SIZE, ...e.logoSize };
+        return `height:${height}px; min-width:${height}px; max-width:${maxWidth}px`;
+      };
+
+      const experienceCard = (e) => `
+        <article class="flex h-56 w-72 shrink-0 snap-start flex-col justify-between rounded-sm bg-white p-5 shadow-sm">
+          <div class="flex items-start justify-between">
+            <div style="${logoBoxStyle(e)}" class="flex items-center justify-center overflow-hidden rounded-md bg-white text-base font-semibold text-neutral-700 ${e.logo ? '' : 'ring-1 ring-neutral-200'}">
+              ${e.logo
+                ? `<img src="${e.logo}" alt="${e.company} logo" loading="lazy" decoding="async" class="h-full w-auto max-w-full object-contain"
+                     onerror="this.parentElement.classList.add('ring-1','ring-neutral-200'); this.replaceWith('${initialsOf(e)}')" />`
+                : initialsOf(e)}
+            </div>
+            <span class="text-xs text-neutral-500">${e.period}</span>
+          </div>
+          <div>
+            <p class="font-medium">${e.role}</p>
+            <p class="mt-1 text-xs text-neutral-500">${e.company}</p>
+          </div>
+          <p class="text-xs">${e.location}</p>
+        </article>`;
+
+      const projectCard = (p) => `
+        <a href="${p.url || '#'}" ${p.url ? 'target="_blank" rel="noopener noreferrer"' : ''} class="group block">
+          <div class="aspect-[4/3] overflow-hidden rounded-sm bg-gradient-to-br ${p.cover} transition group-hover:opacity-90">
+            ${p.image ? `<img src="${p.image}" alt="${p.name} preview" loading="lazy" decoding="async" class="h-full w-full object-cover" />` : ''}
+          </div>
+          <div class="mt-3 flex justify-between text-sm"><span class="font-medium">${p.name}</span></div>
+          <div class="mt-1 flex justify-between text-xs text-neutral-400">${p.type}</div>
+        </a>`;
+
+      // Experience carousel: auto-scrolls like running text, and can also be swiped, dragged,
+      // wheel-scrolled or keyboard-scrolled. Three copies of the cards make the loop endless.
+      const AUTO_SPEED = 40; // px per second
+      const RESUME_DELAY = 500; // ms of idle time before auto-scroll resumes
+      const track = document.getElementById('experience-list');
+      const experienceSet = (hidden) =>
+        `<div class="flex shrink-0 gap-5 pr-5" ${hidden ? 'aria-hidden="true"' : ''}>${experiences.map(experienceCard).join('')}</div>`;
+      track.innerHTML = `<div class="flex w-max">${experienceSet(false)}${experienceSet(true)}${experienceSet(true)}</div>`;
+      track.querySelectorAll('img').forEach((img) => (img.draggable = false));
+
+      const setWidth = () => track.scrollWidth / 3;
+      // keep scrollLeft inside the middle copy so we can scroll forever in both directions
+      const normalize = () => {
+        const w = setWidth();
+        if (track.scrollLeft < w) track.scrollLeft += w;
+        else if (track.scrollLeft >= 2 * w) track.scrollLeft -= w;
+      };
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let pos = 0;
+      let lastSet = 0;
+      let hovering = false;
+      let dragging = false;
+      let idleUntil = 0;
+      let last = performance.now();
+      const touch = () => (idleUntil = performance.now() + RESUME_DELAY);
+
+      const tick = (now) => {
+        const dt = Math.min(now - last, 64);
+        last = now;
+        if (!reduceMotion && !hovering && !dragging && now > idleUntil) {
+          pos += (AUTO_SPEED * dt) / 1000;
+          track.scrollLeft = pos;
+          lastSet = track.scrollLeft;
+        }
+        requestAnimationFrame(tick);
+      };
+
+      const start = () => {
+        track.scrollLeft = setWidth();
+        pos = track.scrollLeft;
+        requestAnimationFrame(tick);
+      };
+
+      track.addEventListener('scroll', () => {
+        // ignore scrolls we caused ourselves; otherwise the user moved it, so follow them
+        if (Math.abs(track.scrollLeft - lastSet) >= 1) {
+          touch();
+          normalize();
+          pos = track.scrollLeft;
+        } else if (track.scrollLeft >= 2 * setWidth()) {
+          normalize();
+          pos = track.scrollLeft;
+        }
+        lastSet = track.scrollLeft;
+      }, { passive: true });
+
+      // hover pauses for mouse; touch/wheel/keys pause briefly via touch()
+      track.addEventListener('mouseenter', () => (hovering = true));
+      track.addEventListener('mouseleave', () => { hovering = false; touch(); });
+      ['touchstart', 'wheel', 'keydown', 'focusin'].forEach((t) => track.addEventListener(t, touch, { passive: true }));
+
+      // mouse drag (touch uses native swipe)
+      let dragX = 0;
+      let dragLeft = 0;
+      track.addEventListener('pointerdown', (ev) => {
+        if (ev.pointerType !== 'mouse') return;
+        dragging = true;
+        dragX = ev.clientX;
+        dragLeft = track.scrollLeft;
+        track.setPointerCapture(ev.pointerId);
+      });
+      track.addEventListener('pointermove', (ev) => {
+        if (!dragging) return;
+        track.scrollLeft = dragLeft - (ev.clientX - dragX);
+      });
+      const endDrag = () => { dragging = false; touch(); };
+      track.addEventListener('pointerup', endDrag);
+      track.addEventListener('pointercancel', endDrag);
+
+      // wait for layout (images/fonts) before measuring
+      window.addEventListener('load', start);
+
+      const projectFilters = [
+        { key: 'all', label: 'All' },
+        { key: 'web', label: 'Web' },
+        { key: 'mobile', label: 'Mobile' },
+        { key: 'pos', label: 'POS' },
+      ];
+      let activeFilter = 'all';
+
+      const renderProjects = () => {
+        const visible = activeFilter === 'all' ? projects : projects.filter((p) => p.categories.includes(activeFilter));
+        document.getElementById('project-list').innerHTML =
+          visible.map(projectCard).join('') ||
+          '<p class="col-span-full text-sm text-neutral-500">No projects in this category yet.</p>';
+        document.getElementById('project-filters').innerHTML = projectFilters
+          .map((f) => {
+            const on = f.key === activeFilter;
+            return `<button type="button" data-filter="${f.key}" aria-pressed="${on}"
+              class="rounded-full border px-4 py-1.5 transition ${on ? 'border-ink bg-ink text-white' : 'border-neutral-300 text-neutral-600 hover:border-ink hover:text-ink'}">${f.label}</button>`;
+          })
+          .join('');
+      };
+
+      document.getElementById('project-filters').addEventListener('click', (ev) => {
+        const btn = ev.target.closest('[data-filter]');
+        if (!btn) return;
+        activeFilter = btn.dataset.filter;
+        renderProjects();
+      });
+
+      renderProjects();
+      document.getElementById('stat-projects').textContent = projects.length-1 + '+'; 
+    </script>
+    <script>
+      (function () {
+        var el = document.getElementById('typing');
+        var text = el.dataset.text;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var i = 0, deleting = false;
+        function tick() {
+          i += deleting ? -1 : 1;
+          el.textContent = text.slice(0, i);
+          var delay = deleting ? 50 : 110;
+          if (!deleting && i === text.length) { deleting = true; delay = 1800; }
+          else if (deleting && i === 0) { deleting = false; delay = 500; }
+          setTimeout(tick, delay);
+        }
+        el.textContent = '';
+        setTimeout(tick, 400);
+      })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById('app-lottie'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'img/phone-lottie.json',
+      });
+    </script>
+  </body>
+</html>
