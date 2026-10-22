@@ -1,0 +1,102 @@
+{
+  "meta": { "title": "Ujikit Portfolio" },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "companies": "Companies",
+    "contact": "Contact",
+    "about": "About",
+    "language": "Language"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "titlePrefix": "Wanna build a",
+    "website": "Website",
+    "or": "or",
+    "mobile": "Android / iOS?",
+    "introPrefix": "Just call me",
+    "introName": "Ujik",
+    "introSuffix": "I turn website ideas into working solutions — solutions & development is my passion.",
+    "talk": "Let's Talk",
+    "whatsapp": "WhatsApp",
+    "work": "View My Work",
+    "imageAlt": "Ujik",
+    "stats": {
+      "achievements": "Achievements across tech companies",
+      "years": "Years Experience\nBuilding software",
+      "projects": "Projects Completed\nWeb & mobile apps"
+    }
+  },
+  "about": {
+    "title": "Engineering with\nClarity and Intention.",
+    "body": "I'm a developer who loves technology and the automotive world. I focus on building clear, dependable software — not just how it looks, but how it works and how it solves real problems. I care about the details: I turn designs into pixel-perfect interfaces, matching spacing, type and color down to the pixel.",
+    "animationLabel": "Selected app preview",
+    "tags": ["Web Programmer", "Mobile Apps Programmer", "React", "Nest JS", "React JS"]
+  },
+  "skills": {
+    "title": "What I Do",
+    "subtitle": "Building scalable web apps, high-performance mobile experiences, and reliable server infrastructure.",
+    "stackLabel": "Core Stack",
+    "items": {
+      "mobile": {
+        "title": "Mobile App Development",
+        "description": "Crafting fluid, cross-platform mobile applications with emphasis on native performance, clean architecture, and intuitive user interfaces."
+      },
+      "web": {
+        "title": "Web Development",
+        "description": "Developing fast, responsive, and SEO-optimized web applications with dynamic user interfaces and scalable API integrations."
+      },
+      "backend": {
+        "title": "Backend & DevOps",
+        "description": "Designing RESTful APIs, database structures, and managing containerized server setups to ensure high availability and uptime."
+      }
+    }
+  },
+  "projects": {
+    "titlePrefix": "Projects I've",
+    "titleHighlight": "built and shipped successfully.",
+    "filterLabel": "Filter projects",
+    "filters": { "all": "All", "web": "Web", "mobile": "Mobile", "pos": "POS" },
+    "empty": "No projects in this category yet.",
+    "previewAlt": "preview",
+    "items": {
+      "golferWeb": "Golf Course Booking Website",
+      "golferMobile": "Golf Booking & Tee Time App",
+      "golferPos": "Cashier & Course Management App",
+      "tompsBuilding": "Building Operation Management",
+      "clevisPartner": "On-demand Services App",
+      "djuraganVoucher": "Online Voucher Redemption",
+      "djurkam": "Room Finder & Reservation",
+      "dparagon": "Exclusive Room Rentals"
+    }
+  },
+  "experience": {
+    "titlePrefix": "Companies I've",
+    "joined": "joined",
+    "and": "and the",
+    "shipped": "products we shipped",
+    "ariaLabel": "Work experience, scrollable",
+    "logoAlt": "logo",
+    "items": {
+      "konncoStudio": { "period": "September 2026", "role": "Frontend Developer", "location": "Bantul, Yogyakarta · Onsite" },
+      "bomber": { "period": "Jun 2025 – Jul 2026", "role": "Fullstack Developer", "location": "Taiwan · Remote" },
+      "telkom": { "period": "Feb 2021 – Mar 2025", "role": "Frontend Developer (Middle)", "location": "South Jakarta · Onsite" },
+      "royalDparagon": { "period": "Jul 2019 – Dec 2020", "role": "Mobile Developer (Lead)", "location": "Sleman, Yogyakarta · Onsite" },
+      "djuragan": { "period": "Jul 2019 – Dec 2020", "role": "Mobile Developer", "location": "Yogyakarta · Remote (Freelance)" }
+    }
+  },
+  "contact": {
+    "titlePrefix": "Let's build something",
+    "titleHighlight": "meaningful together.",
+    "body": "I'm open to collaborations, freelance work, or opportunities where thoughtful engineering can make a real impact.",
+    "talk": "Let's Talk",
+    "whatsapp": "WhatsApp",
+    "cv": "Download CV",
+    "whatsappMessage": "Hello ujik, I would like to ask about building an application"
+  },
+  "footer": {
+    "tagline": "Engineering with clarity and intention.",
+    "open": "Open for collaboration",
+    "rights": "© 2026 Ujikit. All rights reserved."
+  }
+}

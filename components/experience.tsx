@@ -3,12 +3,16 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { LOGO_SIZE, experiences, type Experience as ExperienceItem } from "@/data/experiences";
+
+type Dict = Dictionary["experience"];
 
 const AUTO_SPEED = 40; // px per second
 const RESUME_DELAY = 500; // ms of idle time before auto-scroll resumes
 
-function ExperienceCard({ e }: { e: ExperienceItem }) {
+function ExperienceCard({ e, dict }: { e: ExperienceItem; dict: Dict }) {
+  const t = dict.items[e.id];
   const { height, maxWidth } = { ...LOGO_SIZE, ...e.logoSize };
   return (
     <article className="flex h-56 w-72 shrink-0 snap-start flex-col justify-between rounded-xs bg-white p-5 shadow-xs">
@@ -19,28 +23,28 @@ function ExperienceCard({ e }: { e: ExperienceItem }) {
         >
           <Image
             src={e.logo}
-            alt={`${e.company} logo`}
+            alt={`${e.company} ${dict.logoAlt}`}
             draggable={false}
             sizes="112px"
             className="h-full w-auto max-w-full object-contain"
           />
         </div>
-        <span className="text-xs text-neutral-500">{e.period}</span>
+        <span className="text-xs text-neutral-500">{t.period}</span>
       </div>
       <div>
-        <p className="font-medium">{e.role}</p>
+        <p className="font-medium">{t.role}</p>
         <p className="mt-1 text-xs text-neutral-500">{e.company}</p>
       </div>
-      <p className="text-xs">{e.location}</p>
+      <p className="text-xs">{t.location}</p>
     </article>
   );
 }
 
-function ExperienceSet({ hidden }: { hidden: boolean }) {
+function ExperienceSet({ hidden, dict }: { hidden: boolean; dict: Dict }) {
   return (
     <div className="flex shrink-0 gap-5 pr-5" aria-hidden={hidden || undefined}>
       {experiences.map((e) => (
-        <ExperienceCard key={`${e.company}-${e.period}`} e={e} />
+        <ExperienceCard key={e.id} e={e} dict={dict} />
       ))}
     </div>
   );
@@ -152,25 +156,25 @@ function useMarquee() {
   return track;
 }
 
-export function Experience() {
+export function Experience({ dict }: { dict: Dict }) {
   const track = useMarquee();
 
   return (
     <section id="experience" className="py-10">
       <h2 className="mx-auto max-w-3xl px-6 text-center text-3xl font-light text-neutral-500 sm:text-4xl">
-        Perusahaan tempat saya <span className="text-ink">bergabung</span> dan{" "}
-        <span className="text-ink">produk yang kami rilis</span>
+        {dict.titlePrefix} <span className="text-ink">{dict.joined}</span> {dict.and}{" "}
+        <span className="text-ink">{dict.shipped}</span>
       </h2>
       <div
         ref={track}
         tabIndex={0}
-        aria-label="Pengalaman kerja, dapat digulir"
+        aria-label={dict.ariaLabel}
         className="fade-edges no-scrollbar mx-auto mt-12 max-w-6xl cursor-grab overflow-x-auto pb-4 select-none active:cursor-grabbing"
       >
         <div className="flex w-max">
-          <ExperienceSet hidden={false} />
-          <ExperienceSet hidden />
-          <ExperienceSet hidden />
+          <ExperienceSet hidden={false} dict={dict} />
+          <ExperienceSet hidden dict={dict} />
+          <ExperienceSet hidden dict={dict} />
         </div>
       </div>
     </section>

@@ -1,0 +1,102 @@
+{
+  "meta": { "title": "Ujikit Portofolio" },
+  "nav": {
+    "home": "Beranda",
+    "projects": "Proyek",
+    "companies": "Perusahaan",
+    "contact": "Kontak",
+    "about": "Tentang",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "titlePrefix": "Mau bangun",
+    "website": "Website",
+    "or": "atau",
+    "mobile": "Android / iOS?",
+    "introPrefix": "Panggil saja saya",
+    "introName": "Ujik",
+    "introSuffix": "Saya mengubah ide website menjadi solusi nyata — solusi & pengembangan adalah passion saya.",
+    "talk": "Ayo Ngobrol",
+    "whatsapp": "WhatsApp",
+    "work": "Lihat Karya Saya",
+    "imageAlt": "Ujik",
+    "stats": {
+      "achievements": "Pencapaian di berbagai perusahaan teknologi",
+      "years": "Tahun Pengalaman\nMembangun software",
+      "projects": "Proyek Selesai\nAplikasi web & mobile"
+    }
+  },
+  "about": {
+    "title": "Rekayasa dengan\nKejelasan dan Tujuan.",
+    "body": "Saya developer yang menyukai teknologi dan dunia otomotif. Saya fokus membangun software yang jelas dan andal — bukan hanya soal tampilannya, tetapi bagaimana cara kerjanya dan bagaimana ia menyelesaikan masalah nyata. Saya peduli pada detail: saya mengubah desain menjadi antarmuka pixel-perfect, dengan spasi, tipografi, dan warna yang presisi hingga ke piksel.",
+    "animationLabel": "Pratinjau aplikasi pilihan",
+    "tags": ["Programmer Web", "Programmer Aplikasi Mobile", "React", "Nest JS", "React JS"]
+  },
+  "skills": {
+    "title": "Apa yang Saya Kerjakan",
+    "subtitle": "Membangun aplikasi web yang skalabel, pengalaman mobile berperforma tinggi, dan infrastruktur server yang andal.",
+    "stackLabel": "Teknologi Utama",
+    "items": {
+      "mobile": {
+        "title": "Pengembangan Aplikasi Mobile",
+        "description": "Membuat aplikasi mobile lintas platform yang mulus dengan fokus pada performa native, arsitektur yang bersih, dan antarmuka yang intuitif."
+      },
+      "web": {
+        "title": "Pengembangan Web",
+        "description": "Mengembangkan aplikasi web yang cepat, responsif, dan SEO-friendly dengan antarmuka dinamis serta integrasi API yang skalabel."
+      },
+      "backend": {
+        "title": "Backend & DevOps",
+        "description": "Merancang RESTful API, struktur database, dan mengelola server berbasis container untuk menjamin ketersediaan dan uptime yang tinggi."
+      }
+    }
+  },
+  "projects": {
+    "titlePrefix": "Proyek yang telah saya",
+    "titleHighlight": "bangun dan rilis dengan sukses.",
+    "filterLabel": "Filter proyek",
+    "filters": { "all": "Semua", "web": "Web", "mobile": "Mobile", "pos": "POS" },
+    "empty": "Belum ada proyek di kategori ini.",
+    "previewAlt": "pratinjau",
+    "items": {
+      "golferWeb": "Website Pemesanan Lapangan Golf",
+      "golferMobile": "Aplikasi Booking Golf & Tee Time",
+      "golferPos": "Aplikasi Kasir & Manajemen Lapangan",
+      "tompsBuilding": "Manajemen Operasional Gedung",
+      "clevisPartner": "Aplikasi Layanan On-demand",
+      "djuraganVoucher": "Penukaran Voucher Online",
+      "djurkam": "Pencari & Reservasi Kamar",
+      "dparagon": "Sewa Kamar Eksklusif"
+    }
+  },
+  "experience": {
+    "titlePrefix": "Perusahaan tempat saya",
+    "joined": "bergabung",
+    "and": "dan",
+    "shipped": "produk yang kami rilis",
+    "ariaLabel": "Pengalaman kerja, dapat digulir",
+    "logoAlt": "logo",
+    "items": {
+      "konncoStudio": { "period": "September 2026", "role": "Frontend Developer", "location": "Bantul, Yogyakarta · Onsite" },
+      "bomber": { "period": "Jun 2025 – Jul 2026", "role": "Fullstack Developer", "location": "Taiwan · Remote" },
+      "telkom": { "period": "Feb 2021 – Mar 2025", "role": "Frontend Developer (Middle)", "location": "Jakarta Selatan · Onsite" },
+      "royalDparagon": { "period": "Jul 2019 – Des 2020", "role": "Mobile Developer (Lead)", "location": "Sleman, Yogyakarta · Onsite" },
+      "djuragan": { "period": "Jul 2019 – Des 2020", "role": "Mobile Developer", "location": "Yogyakarta · Remote (Freelance)" }
+    }
+  },
+  "contact": {
+    "titlePrefix": "Mari membangun sesuatu yang",
+    "titleHighlight": "bermakna bersama.",
+    "body": "Saya terbuka untuk kolaborasi, pekerjaan freelance, atau peluang di mana rekayasa yang matang dapat memberi dampak nyata.",
+    "talk": "Ayo Ngobrol",
+    "whatsapp": "WhatsApp",
+    "cv": "Unduh CV",
+    "whatsappMessage": "Hello ujik, saya ingin bertanya mengenai pembuatan aplikasi"
+  },
+  "footer": {
+    "tagline": "Rekayasa dengan kejelasan dan tujuan.",
+    "open": "Terbuka untuk kolaborasi",
+    "rights": "© 2026 Ujikit. Seluruh hak cipta dilindungi."
+  }
+}
